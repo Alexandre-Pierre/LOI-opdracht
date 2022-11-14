@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.menu {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: .8em;
+    width: 100%;
+    background-color: red;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 1rem 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li {
+    border-inline-end: 1px solid white;
+    margin-inline-end: .5em;
+    width: 100%;
+    text-align: center;
+}
+
+li:last-of-type {
+    border: none;
+}
+
+a {
+    text-transform: uppercase;
+    font-size: .8em;
+    text-decoration: none;
+    color: rgb(253, 249, 241);
+}
+
+a:hover {
+    color: rgb(110, 53, 0);
+    background-color: rgb(246, 238, 11);
+    border: .1em solid rgb(253,249,241);
+    text-shadow: 0 0 2px rgb(20, 218, 96);
+}
+
+span {
+    color: rgb(255,0,0);
+    font-size: 1em;
+}
+
+h2 {
+    text-shadow: 2px 2px 4px #000;
+}
+
+.part2 {
+    columns: 1vw, 1;
+}
+
+img {
+    width: 100%;
+}
+
+.transparent{
+    opacity: 50%;
+}
+
+.scheiding {
+    background-image: linear-gradient(to right, black, white, black);
+    width: 100%;
+    height: .5em;
+    margin-block-start: 2em;
+}
+
+.blokje {
+    display: block;
+    position: relative;
+    width: 8em;
+    height: 8em;
+    background-color: rgb(6, 13, 115);
+    border-radius: 25%;
+    margin: 0 auto 1em;
+    border: 1px solid #000;
+    align-content: center;
+}
+
+.rondje {
+    display: flex;
+    position: absolute;
+    width: 6em;
+    height: 6em;
+    transform: translate(1em, 1em);
+    background-color: rgb(132, 136, 153);
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.LOI {
+    margin: auto;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4em;
+    color: rgb(6, 13, 115);
+}
+
+.container {
+    columns: 2;
+    width: 100%;
+    position: relative;
+}
+
+.outterblock1 {
+    width: 50%;
+    float: left;
+}
+
+.outterblock2 {
+    width: 50%;
+    float: right;
+}
+
+@media screen and (min-width: 768px) {
+    .part1 {
+        columns: 3;
+        column-rule: 1px solid red;
+        padding: 1em;
+        margin: auto;
+    }
+
+    .part1 h2 {
+        column-span: all;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    p + p {
+        margin-block-start: 1em;
+    }
+
+    .foto {
+        columns: 2;
+    }
+
+    img {
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .foto {
+        display: flex;
+        flex-direction:row;
+    }
+
+    img {
+        margin: .3em;
+    }
+
+    .outterblock1 {
+        margin-block-start: 5em;
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+    }
+
+    .outterblock2 {
+        margin-block-start: 10em;
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+    }
+
+    .blokje {
+        transform: scale(2, 2);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
